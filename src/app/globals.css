@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme {
+  --color-paper: #f7f5f2;
+  --color-ink: #1f2937;
+  --color-line: #e7e5e4;
+  --color-accent: #0e7c66;
+  --color-accent-dark: #0b5a4d;
+  --color-accent-tint: #dff4ee;
+}
+
+@layer base {
+  body {
+    @apply bg-paper font-sans text-ink antialiased;
+  }
+
+  :focus-visible {
+    outline: 2px solid #0e7c66;
+    outline-offset: 2px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
