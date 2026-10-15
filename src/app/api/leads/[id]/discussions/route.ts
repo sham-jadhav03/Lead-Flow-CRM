@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
-import { handle, readJson } from "@/src//server/http";
-import { createDiscussionSchema } from "@/src//server/validation";
-import { addDiscussion, listDiscussions } from "@/src//server/services/discussion.service";
+import { handle, readJson } from "@/src/server/http";
+import { createDiscussionSchema } from "@/src/server/validation";
+import { addDiscussion, listDiscussions } from "@/src/server/services/discussion.service";
 
 type Ctx = { params: Promise<{ id: string }> };
 

@@ -1,7 +1,7 @@
 import leadModel from "../models/Leads";
 import discussionModel from "../models/Discussion";
 import { AppError } from "../http";
-import { assertId } from "./lead.service.js";
+import { assertId } from "./lead.service";
 
 async function requireLead(id: string) {
   assertId(id);
