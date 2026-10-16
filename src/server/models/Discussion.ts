@@ -33,7 +33,7 @@ const discussionSchema = new Schema<IDiscussion>(
   },
 );
 
-discussionSchema.index({ leadId: 1, createAt: -1 });
+discussionSchema.index({ leadId: 1, createdAt: -1 });
 
 discussionSchema.set("toJSON", {
   transform: (_doc, raw) => {
